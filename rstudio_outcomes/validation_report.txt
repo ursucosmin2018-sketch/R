@@ -1,0 +1,7 @@
+PASS: all12 separate Excel files load using R/readxl.
+PASS: all96 primary study/outcome rows retained; no duplicate row IDs.
+PASS:512 numerical arm-data cells match uploaded source workbooks (Python round-trip comparison).
+PASS: R import preserves numeric types, missing values, logical completeness flags and valid event counts.
+No missing data were imputed and no median/model estimates were converted to raw SDs.
+R: R version 4.5.3 (2026-03-11)
+readxl: 1.6.0

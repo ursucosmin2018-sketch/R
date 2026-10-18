@@ -1,0 +1,123 @@
+{
+  "source_workbooks": [
+    {
+      "name": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "sha256": "60ac2d30e4224a069e7a7ae13cc1e6e9b58044817783a07c09eae7b51436ff1e"
+    },
+    {
+      "name": "CSP_vs_BiVP_binary_source_checked.xlsx",
+      "sha256": "991696a80006add690daa200bbdede15048ae16350801c69e6d7a7f2fb76cbff"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "01_six_minute_walk_distance.xlsx",
+      "outcome": "walk_distance",
+      "rows": 7,
+      "has_complete_numeric_inputs": 1,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "6MWD",
+      "sha256": "61fb7f78cd2f8217337cd2239f2e84ddc5b65b5a2ffde3304e4bc079f5e5e395"
+    },
+    {
+      "file": "02_nyha_class.xlsx",
+      "outcome": "nyha",
+      "rows": 7,
+      "has_complete_numeric_inputs": 3,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "NYHA",
+      "sha256": "e86d7291d2174fff9ad35c0a105e790a16337f74d15e3eeb3a40c12266967acb"
+    },
+    {
+      "file": "03_quality_of_life.xlsx",
+      "outcome": "quality_of_life",
+      "rows": 6,
+      "has_complete_numeric_inputs": 0,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "Quality_of_life",
+      "sha256": "f8b6767c7ad49aae54d9a1ddb8bbb729a1c3e02f90a0c8c0edbb8ea7ed6bd885"
+    },
+    {
+      "file": "04_qrs_duration.xlsx",
+      "outcome": "qrs",
+      "rows": 12,
+      "has_complete_numeric_inputs": 5,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "QRS",
+      "sha256": "6db35be895f9204224387be13e844c8c04ee2d35ea496fc5c49414cf7f320844"
+    },
+    {
+      "file": "05_lvef.xlsx",
+      "outcome": "lvef",
+      "rows": 12,
+      "has_complete_numeric_inputs": 4,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "LVEF",
+      "sha256": "ee243510b54d357f62dcdd67b5fb43fb4b725f89f9d1018ac89df08c42accb28"
+    },
+    {
+      "file": "06_lvesv_ml.xlsx",
+      "outcome": "lvesv",
+      "rows": 6,
+      "has_complete_numeric_inputs": 2,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "LVESV_mL",
+      "sha256": "519a5c7dd428c998caf16e0028b1644cd66624d999e32b02965bb85a53b9c6ab"
+    },
+    {
+      "file": "07_lvesv_percent_change.xlsx",
+      "outcome": "lvesv",
+      "rows": 2,
+      "has_complete_numeric_inputs": 2,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "LVESV_percent",
+      "sha256": "6306d97ac2d1022cfce3987715ab1e809ea2088e33a23e8d527964b25adaee1d"
+    },
+    {
+      "file": "08_lvesv_index_ml_m2.xlsx",
+      "outcome": "lvesv",
+      "rows": 1,
+      "has_complete_numeric_inputs": 0,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "LVESVi_mL_m2",
+      "sha256": "c7fd4fe7c7faadbb7801c149d88c2e0c5be8be1f193680cff693fc150323c990"
+    },
+    {
+      "file": "09_pacing_threshold.xlsx",
+      "outcome": "threshold",
+      "rows": 11,
+      "has_complete_numeric_inputs": 4,
+      "source_workbook": "CSP_vs_BiVP_continuous_source_checked.xlsx",
+      "source_sheet": "Pacing_threshold",
+      "sha256": "304f04ea0fa688f663dce7e684ae6b984e13fb3fad383f3e5deadfa8703b2984"
+    },
+    {
+      "file": "10_composite_outcome.xlsx",
+      "outcome": "composite",
+      "rows": 9,
+      "has_complete_numeric_inputs": 6,
+      "source_workbook": "CSP_vs_BiVP_binary_source_checked.xlsx",
+      "source_sheet": "Composite",
+      "sha256": "fb2417546a594781c70fbdc092dbe9e2477a49fa82f8026cb594bba6e671f09c"
+    },
+    {
+      "file": "11_heart_failure_hospitalization.xlsx",
+      "outcome": "hhf",
+      "rows": 11,
+      "has_complete_numeric_inputs": 6,
+      "source_workbook": "CSP_vs_BiVP_binary_source_checked.xlsx",
+      "source_sheet": "HF_hospitalization",
+      "sha256": "236ec4f92afa93c31ff77ba390109e7ac337c5876d997195a7f72b1192ebd117"
+    },
+    {
+      "file": "12_all_cause_mortality.xlsx",
+      "outcome": "mortality",
+      "rows": 12,
+      "has_complete_numeric_inputs": 7,
+      "source_workbook": "CSP_vs_BiVP_binary_source_checked.xlsx",
+      "source_sheet": "All_cause_mortality",
+      "sha256": "e54a5de38bc6e6a725616b8e50213c6e1bbd542487f37f86fbccb75145528c33"
+    }
+  ],
+  "total_primary_rows": 96
+}
