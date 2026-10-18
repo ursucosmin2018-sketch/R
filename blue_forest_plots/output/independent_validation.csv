@@ -1,0 +1,14 @@
+"analysis","metafor_difference","lower_ci_difference","upper_ci_difference","unique_cohorts"
+"walk",0,0,0,TRUE
+"nyha",0,0,0,TRUE
+"qol",0,0,0,TRUE
+"qrs",0,0,0,TRUE
+"lvef",0,0,0,TRUE
+"threshold",0,0,0,TRUE
+"composite",0,0,0,TRUE
+"hhf",0,0,0,TRUE
+"mortality",0,0,0,TRUE
+"composite_broad",0,0,0,TRUE
+"hhf_broad",0,0,0,TRUE
+"mortality_as_treated",0,0,0,TRUE
+"qrs_as_treated",0,0,0,TRUE

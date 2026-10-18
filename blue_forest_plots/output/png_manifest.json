@@ -1,0 +1,132 @@
+[
+  {
+    "file": "01_walk.png",
+    "width": 4200,
+    "height": 1650,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "9439b52c03f8ac862c7478b72d99268dbd2654076809ebb9a54e74ab0df4e53c"
+  },
+  {
+    "file": "02_nyha.png",
+    "width": 4200,
+    "height": 1575,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "36b682e92ebe9f80ea29d888fccfcf3510d5864c59b6f00e9221bb68b6fb23fe"
+  },
+  {
+    "file": "03_qol.png",
+    "width": 4200,
+    "height": 1500,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "3d6d1114799577dd98e8b2df3bcd971e5474280fcf9f46908215a11a8206f7cb"
+  },
+  {
+    "file": "04_qrs.png",
+    "width": 4200,
+    "height": 1725,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "746b997575d5b2248881003c406943a124f7bfb2cb1a63c5a057817e0f3a7a35"
+  },
+  {
+    "file": "05_lvef.png",
+    "width": 4200,
+    "height": 1875,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "7fcfe8af92ed3233430edc38d8f63b379c92b12c75f3b969415a8d2a7655e872"
+  },
+  {
+    "file": "06_threshold.png",
+    "width": 4200,
+    "height": 1575,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "a946e3dc42ae440df15ed9bac0ea3382f2780a741d0709926bacc0d17217e80c"
+  },
+  {
+    "file": "07_composite.png",
+    "width": 4200,
+    "height": 1650,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "9b459628e8890703c8c28ef2a3fbb05d8bf07cbe1e0196a69025b758edf1b4be"
+  },
+  {
+    "file": "08_hhf.png",
+    "width": 4200,
+    "height": 1875,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "7260a44375e90119415e9f0489ed92932fbc4896ae2d2f5996597e4336720e04"
+  },
+  {
+    "file": "09_mortality.png",
+    "width": 4200,
+    "height": 1950,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "68db578bd5f405e898b9d99fd67f1b086675b9631831d6c9e7d1f8cdf5781b97"
+  },
+  {
+    "file": "10_composite_broad.png",
+    "width": 4200,
+    "height": 1500,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "99abcada01738ee5c557822c7f231f5db8db362bf278aa28cba0d1ae0b8636f4"
+  },
+  {
+    "file": "11_hhf_broad.png",
+    "width": 4200,
+    "height": 1950,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "c2c41fe29ec34ca9fb79464de5d7b63bcd03994e448797d1f7ff23dde3df17a3"
+  },
+  {
+    "file": "12_mortality_as_treated.png",
+    "width": 4200,
+    "height": 2025,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "5a5a7eea9debc978cd4b39476d65117ca430f9578632c7968c76489f9c7db0bf"
+  },
+  {
+    "file": "13_qrs_as_treated.png",
+    "width": 4200,
+    "height": 1800,
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "sha256": "1c49d1183a60e6106cd63f06921578be66dc492fd8ed27b73331df136bda51ca"
+  }
+]

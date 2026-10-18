@@ -1,0 +1,10 @@
+PASS: all 9 uploaded outcome Excel files read in R.
+PASS: 13 pooled models and 13 PNG files generated (9 primary, 4 sensitivity).
+PASS: independent metafor REML pooled estimates and manually reconstructed Hartung-Knapp intervals agree within 0.0001 on analysis scale.
+PASS: 28 estimable binary study rows independently recalculated from event/non-event cells; log odds ratios and standard errors agree within 1e-10.
+PASS: double-zero rows excluded from inverse-variance pooling.
+PASS: all model cohorts unique; LEVEL-AT and CONSYST-CRT never pooled together.
+PASS: all 87 main-sheet rows have inclusion/exclusion decisions and reasons.
+PASS: all 13 PNGs decode, have nonblank content, 4200 pixel width and 300 DPI.
+PASS: final plot layouts visually reviewed; estimates, intervals, weights and pooled diamonds visible.
+Source assumptions and limitations: see README.md.

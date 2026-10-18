@@ -1,0 +1,4 @@
+"study","TE","seTE","follow_up","basis","cohort","input_file","input_sheet","input_row_id","selection_reason"
+"His-Alternative 2021",-0.0999999999999999,0.14422205101856,"6 months","Mean / SD","His-Alternative 2021","02_nyha_class.xlsx","alternatives","extra__nyha__His-Alternative_2021__six_month_ITT","Independent-arm source mean/SD/N"
+"LBBP-RESYNC 2022",-0.09,0.196432180915992,"6 months","Reported CI","LBBP-RESYNC 2022","02_nyha_class.xlsx","reported_contrasts","","Reported study contrast; normal approximation from rounded 95% CI"
+"CONSYST-CRT 2025",-0.1,0.12094157958139,"12 months","Mean / SD","Barcelona_LEVEL_CONSYST","02_nyha_class.xlsx","data","nyha__CONSYST-CRT_2025","Larger shared Barcelona cohort selected; excludes overlapping LEVEL-AT"

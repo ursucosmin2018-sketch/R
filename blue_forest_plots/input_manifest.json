@@ -1,0 +1,72 @@
+[
+  {
+    "file": "10_composite_outcome.xlsx",
+    "sha256": "fb2417546a594781c70fbdc092dbe9e2477a49fa82f8026cb594bba6e671f09c",
+    "matches_prior_export": true
+  },
+  {
+    "file": "05_lvef.xlsx",
+    "sha256": "ee243510b54d357f62dcdd67b5fb43fb4b725f89f9d1018ac89df08c42accb28",
+    "matches_prior_export": true
+  },
+  {
+    "file": "09_pacing_threshold.xlsx",
+    "sha256": "304f04ea0fa688f663dce7e684ae6b984e13fb3fad383f3e5deadfa8703b2984",
+    "matches_prior_export": true
+  },
+  {
+    "file": "11_heart_failure_hospitalization.xlsx",
+    "sha256": "236ec4f92afa93c31ff77ba390109e7ac337c5876d997195a7f72b1192ebd117",
+    "matches_prior_export": true
+  },
+  {
+    "file": "12_all_cause_mortality.xlsx",
+    "sha256": "e54a5de38bc6e6a725616b8e50213c6e1bbd542487f37f86fbccb75145528c33",
+    "matches_prior_export": true
+  },
+  {
+    "file": "build_clean_files.py",
+    "sha256": "eaed2266403380f8042f298fd2fee8231214c9f94d1147243bfbe93be38734e8",
+    "matches_prior_export": null
+  },
+  {
+    "file": "import_outcomes.R",
+    "sha256": "0bff8dccaae5a5d256fa44a281ba79da566bfaab4d79320a00168de8deef31e6",
+    "matches_prior_export": null
+  },
+  {
+    "file": "manifest.json",
+    "sha256": "bde22a022040ddd74ad3b844e7411ddfa4cdcae3b306df06a38606e25f882660",
+    "matches_prior_export": null
+  },
+  {
+    "file": "validation_report.txt",
+    "sha256": "bc863c867c05f099323a64c7fc32c6cdd6ebd0381ca4aa87d787edf69b0c6c5b",
+    "matches_prior_export": null
+  },
+  {
+    "file": "01_six_minute_walk_distance.xlsx",
+    "sha256": "61fb7f78cd2f8217337cd2239f2e84ddc5b65b5a2ffde3304e4bc079f5e5e395",
+    "matches_prior_export": true
+  },
+  {
+    "file": "README.md",
+    "sha256": "bbd8aa31965b749901f5e7ddaaf46c7aefb9211f40d7b50092fc2ffd6150a98d",
+    "matches_prior_export": null
+  },
+  {
+    "file": "03_quality_of_life.xlsx",
+    "sha256": "f8b6767c7ad49aae54d9a1ddb8bbb729a1c3e02f90a0c8c0edbb8ea7ed6bd885",
+    "matches_prior_export": true
+  },
+  {
+    "file": "04_qrs_duration.xlsx",
+    "sha256": "6db35be895f9204224387be13e844c8c04ee2d35ea496fc5c49414cf7f320844",
+    "matches_prior_export": true
+  },
+  {
+    "file": "02_nyha_class.xlsx",
+    "sha256": "e86d7291d2174fff9ad35c0a105e790a16337f74d15e3eeb3a40c12266967acb",
+    "matches_prior_export": true
+  }
+]

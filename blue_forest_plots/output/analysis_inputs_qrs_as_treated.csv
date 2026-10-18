@@ -1,0 +1,7 @@
+"study","TE","seTE","follow_up","basis","cohort","input_file","input_sheet","input_row_id","selection_reason"
+"His-Alternative 2021",-3,5,"6 months","Mean / SD","His-Alternative 2021","04_qrs_duration.xlsx","alternatives","extra__qrs__His-Alternative_2021__six_month_ITT","Independent-arm source mean/SD/N"
+"LBBP-RESYNC 2022",-5.09999999999999,4.01659059402374,"Implant","Mean / SD","LBBP-RESYNC 2022","04_qrs_duration.xlsx","data","qrs__LBBP-RESYNC_2022","Independent-arm source mean/SD/N"
+"CONSYST-CRT 2025",-1,4.32279622052429,"12 months","Mean / SD","Barcelona_LEVEL_CONSYST","04_qrs_duration.xlsx","data","qrs__CONSYST-CRT_2025","Larger Barcelona cohort; QRS change measured from pacing spike; overlapping LEVEL-AT excluded"
+"CSP-SYNC 2025",-1,5.10213456924654,"6 months","Reported CI","CSP-SYNC 2025","04_qrs_duration.xlsx","reported_contrasts","","Reported study contrast; normal approximation from rounded 95% CI"
+"PhysioSync-HF 2026",-4.5,3.64802621701128,"12 months","Reported CI","PhysioSync-HF 2026","04_qrs_duration.xlsx","reported_contrasts","","Reported study contrast; normal approximation from rounded 95% CI"
+"His-SYNC 2019",-39,7.50277726356492,"Implant","Mean / SD","His-SYNC 2019","04_qrs_duration.xlsx","data","qrs__His-SYNC_2019","Sensitivity only: treatment-received 16/24; SD corrected to22"

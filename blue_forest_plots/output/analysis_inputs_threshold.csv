@@ -1,0 +1,4 @@
+"study","TE","seTE","follow_up","basis","cohort","input_file","input_sheet","input_row_id","selection_reason"
+"His-Alternative 2021",0.9,0.29732137494637,"6 months","Mean / SD","His-Alternative 2021","09_pacing_threshold.xlsx","alternatives","extra__threshold__His-Alternative_2021__six_month_ITT","HBP versus BiVP at 1 ms; six-month ITT"
+"LEVEL-AT 2022",-0.2,0.0845154254728517,"6 months","Mean / SD","Barcelona_LEVEL_CONSYST","09_pacing_threshold.xlsx","alternatives","extra__threshold__LEVEL-AT_2022__six_month","Six-month Barcelona cohort selected to align follow-up; overlapping CONSYST excluded; pulse widths vary"
+"LBBP-RESYNC 2022",-0.3,0.156348968656656,"6 months","Mean / SD","LBBP-RESYNC 2022","09_pacing_threshold.xlsx","data","threshold__LBBP-RESYNC_2022","Six-month randomized comparison; exploratory voltage synthesis, not energy"

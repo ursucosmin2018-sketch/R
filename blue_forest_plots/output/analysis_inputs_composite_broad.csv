@@ -1,0 +1,3 @@
+"study","n_csp","event_csp","n_biv","event_biv","follow_up","cohort","input_file","input_sheet","input_row_id","selection_reason"
+"HeartSync-LBBP 2026",100,8,100,28,"Median 36 mo","HeartSync-LBBP 2026","10_composite_outcome.xlsx","data","composite__HeartSync-LBBP_2026","All-cause death or HF events including urgent IV-diuretic visits"
+"PhysioSync-HF 2026",87,15,86,8,"12 months","PhysioSync-HF 2026","10_composite_outcome.xlsx","data","composite__PhysioSync-HF_2026","All-cause death or HF hospitalization or urgent HF visits"

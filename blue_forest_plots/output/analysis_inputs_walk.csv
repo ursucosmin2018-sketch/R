@@ -1,0 +1,5 @@
+"study","TE","seTE","follow_up","basis","cohort","input_file","input_sheet","input_row_id","selection_reason"
+"His-Alternative 2021",-7,33.8904116233486,"6 months","Mean / SD","His-Alternative 2021","01_six_minute_walk_distance.xlsx","data","walk_distance__His-Alternative_2021","Independent-arm source mean/SD/N"
+"LBBP-RESYNC 2022",43.99,29.1204330539746,"6 months","Reported CI","LBBP-RESYNC 2022","01_six_minute_walk_distance.xlsx","reported_contrasts","","Reported study contrast; normal approximation from rounded 95% CI"
+"PhysioSync-HF 2026",33.1,15.3574250534321,"12 months","Reported CI","PhysioSync-HF 2026","01_six_minute_walk_distance.xlsx","reported_contrasts","","Reported study contrast; normal approximation from rounded 95% CI"
+"LEFT-BUNDLE-CRT 2026",18,22.8301538064425,"12 months","Arm CIs*","LEFT-BUNDLE-CRT 2026","01_six_minute_walk_distance.xlsx","other_statistics + data","walk_distance__LEFT-BUNDLE-CRT_2026","Approximate SE from rounded arm mean 95% CIs, using t quantiles and independent arms; no SD imputation"
