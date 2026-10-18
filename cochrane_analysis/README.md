@@ -1,3 +1,5 @@
+> **Primary-source audit now available:** [Source-checked Excel workbooks and audit](../verified_study_data/README.md). The plots in this folder reproduce the meta-analysis figure inputs. The primary-source audit identifies corrections, overlapping cohorts and incompatible endpoints; these plots are not a corrected, source-validated synthesis.
+
 # Cochrane-style forest plots from the new supplied figures
 
 All **ten outcomes** have been recalculated in R and rendered using `meta::forest(layout = "RevMan5")`. These are new analyses of the latest figures, with HBP and LBBAP subgroups. Earlier Excel data and the earlier screenshots are not used.

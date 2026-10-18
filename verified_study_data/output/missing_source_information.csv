@@ -1,0 +1,14 @@
+study,needed,affects,reason
+His-Alternative 2021,Frandsen et al2026 long-term follow-up; DOI10.1016/j.jacep.2026.02.016,"NYHA,QRS,LVEF,LVESV,threshold,composite,HFH,mortality",Uploaded2021 paper ends at6 months. Long-term forest entries cannot be verified from it.
+LBBP-RESYNC 2022,Zou et al2026 four-year follow-up abstract/presentation; HeartRhythm23:S62-S63,"composite,HFH,mortality",Uploaded2022 paper reports no6-month events and randomized20/20. Forest uses22/18 and later events.
+LECART 2026,EHRA2026 LECART presentation or full arm-level outcome tables,"composite,HFH,mortality",Press release lacks arm denominators and exact component counts. Rounded primary-composite percentages cannot recover these.
+LEFT-BUNDLE-CRT 2026,Online supplementary TablesS3 andS4; unindexed LVESV if needed,threshold; absolute LVESV,"Threshold numbers absent. Available LVESV change is indexed in mL/m2, not mL."
+PhysioSync-HF 2026,Supplement2 SAP and Supplement3 eTable1/outcome sample sizes,threshold; continuous outcome Ns,Main paper supplies continuous mean/SD but not individual outcome Ns; threshold forest values not in main paper.
+CONSYST-CRT 2025,Supplemental Table1 and separate clinical components/overlap,"HFH,mortality,strict death-or-HFH composite",Main report composite includes transplantation; individual component counts unavailable in supplied PDF.
+ALTERNATIVE-AF 2022,Supplemental Tables1-3 and crossover-period denominators/covariance,threshold; event risks; paired outcomes,"Need period-specific thresholds, at-risk denominators, and paired uncertainty;25/25 sequence counts are not exposure-period denominators."
+Lustgarten 2015,"Numerical data behind Figures2-4, paired covariance and vector-specific QRS Ns",all seven continuous rows,Unlabelled graphs do not certify decimal SDs; QoL prose/bar and walking units disagree.
+HOT-CRT 2023,"Outcome-specific Ns for6-month QRS,walking andQoL","QRS,walking,QoL",Group heading50/50 is not measured N;44/44 completed follow-up including echo.
+HeartSync-LBBP 2026,Observed Ns for last-follow-up continuous outcomes,"NYHA,QRS,LVEF,threshold",Table2 heading100/100 denotes randomization; measured last-follow-up N not separately reported.
+LEVEL-AT 2022,Six-month measured echo Ns / missing-data handling,"LVEF,LVESV","Table2 header35/35, but two BiVP deaths and forest LVEF N35/33. Shared cohort with CONSYST must also be handled."
+CSP-SYNC 2025,Clarification of mortality timing and raw continuous SDs if arm-based analysis is intended,mortality timing; continuous SDs,Figure1 shows two LBBAP deaths; narrative only describes its cardiovascular death. Mixed-model CIs do not provide raw patient SDs.
+His-SYNC 2019,Raw mean/SDs or explicit median-conversion plan; randomized allocation data for ITT synthesis,"LVEF,QoL,threshold; population choice",Published source uses medians/IQRs and treatment-received groups16/24.

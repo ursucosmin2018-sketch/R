@@ -1,3 +1,5 @@
+> **Primary-source audit now available:** [Source-checked Excel workbooks and audit](../verified_study_data/README.md). The plots in this folder reproduce the meta-analysis figure inputs. The primary-source audit identifies corrections, overlapping cohorts and incompatible endpoints; these plots are not a corrected, source-validated synthesis.
+
 # Source verification status
 
 ## Completed: supplied meta-analysis

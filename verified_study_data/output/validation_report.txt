@@ -1,0 +1,7 @@
+PASS: all three workbooks read successfully with R/readxl.
+PASS:64 continuous rows,32 binary rows,13 source documents,512 arm-data comparisons.
+PASS: key source corrections, missing values, event denominators and separated units checked.
+PASS: outcome worksheets match exported CSV values.
+LIMIT: checks validate extraction packaging and explicit source values; they do not resolve missing primary-source data.
+R: R version 4.5.3 (2026-03-11)
+readxl: 1.6.0

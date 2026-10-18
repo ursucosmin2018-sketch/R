@@ -1,0 +1,13 @@
+study,field,forest,source,source_location,note
+His-SYNC2019,QRS CSP SD,20,22,p6 on-treatment results,Primary paper explicitly reports22.
+PhysioSync-HF2026,LVEF CSP mean change,9,8,p6 Table2,Primary paper explicitly reports8; SD11 unchanged. Outcome N unresolved.
+HOT-CRT2023,EQ5D BiVP mean change,0.08,0.07,p8 Table4,Primary paper explicitly reports0.07.
+His-Alternative2021,6MWD CSP N,46,25,p6 Table3 ITT,Means444(133)/451(105) are six-month ITT n25/25.
+ALTERNATIVE-AF2022,QRS CSP mean,107.7,107.6,p4 Table1 andp5,Paired observations in same50 patients.
+LBBP-RESYNC2022,LVEF endpoint SDs,8.54 /8.69,13.2 /9.4,p7 Figure3A,Forest combines final means with dispersion reconstructed from model change SEs. Observed final N20/19 derived from p6.
+HOT-CRT2023,Echo endpoint N,50 /50,44 /44,p5 follow-up completion; p8 Table4,88 patients completed six-month visit including echo; table50/50 headings denote trial groups.
+HOT-CRT2023,Threshold N,50 /50,57 /43,p5 Table2 pacing-parameter subheading,"Lead-type comparison, not randomized arm comparison."
+His-SYNC2019,LVESV sign and units,+22 /+19; treated as volume,-22% /-19%; relative change,p7 on-treatment results,SD24/14 retained in percent; do not pool as mL.
+CONSYST-CRT2025,LVESV unit and N,volume;67 /67,relative percent;66 /62,p6 Table2 andfootnote,Arm changes-27.9(27)/-27.9(28.1) are percentages; unavailable echo in1/5.
+LEFT-BUNDLE-CRT2026,LVESV unit,mL,mL/m2,pp8-9 Table2,Indexed volume change; cannot convert to mL without additional data.
+CSP-SYNC2025,All-cause deaths CSP,1,2,p4 Figure1,Flowchart lists1CV plus1non-CV death in LBBAP. Narrative mentions onlyCV death; retain source note.
