@@ -6,12 +6,15 @@ if (!requireNamespace("meta", quietly = TRUE)) {
 if (!requireNamespace("meta", quietly = TRUE)) stop("Install the R package meta")
 
 specifications <- data.frame(
-  outcome = c("walk_distance", "nyha", "quality_of_life", "composite", "hhf", "mortality"),
+  outcome = c("walk_distance", "nyha", "quality_of_life", "composite", "hhf", "mortality",
+              "qrs", "lvef", "lvesv", "threshold"),
   title = c("6-minute walk distance", "NYHA functional class", "Quality of life",
-            "Composite of HHF or all-cause mortality", "Hospitalization for heart failure", "All-cause mortality"),
-  measure = c("MD", "SMD", "SMD", "OR", "OR", "OR"),
+            "Composite of HHF or all-cause mortality", "Hospitalization for heart failure", "All-cause mortality",
+            "QRS duration", "Left ventricular ejection fraction", "Left ventricular end-systolic volume", "Pacing threshold"),
+  measure = c("MD", "SMD", "SMD", "OR", "OR", "OR", rep("MD", 4)),
   filename = c("01_walk_distance.png", "02_nyha.png", "03_quality_of_life.png",
-               "04_composite_hhf_or_mortality.png", "05_hhf.png", "06_all_cause_mortality.png"),
+               "04_composite_hhf_or_mortality.png", "05_hhf.png", "06_all_cause_mortality.png",
+               "07_qrs_duration.png", "08_lvef.png", "09_lvesv.png", "10_pacing_threshold.png"),
   stringsAsFactors = FALSE
 )
 
@@ -48,7 +51,7 @@ render_plot <- function(m, spec, file) {
   grDevices::png(file, width = 16, height = height, units = "in", res = 300,
                 type = "cairo", bg = "white")
   on.exit(grDevices::dev.off(), add = TRUE)
-  lower_favours_csp <- spec$outcome %in% c("nyha", "composite", "hhf", "mortality")
+  lower_favours_csp <- spec$outcome %in% c("nyha", "composite", "hhf", "mortality", "qrs", "lvesv", "threshold")
   meta::forest(
     m, layout = "RevMan5", common = FALSE, random = TRUE,
     label.e = "CSP", label.c = "BiVP", print.subgroup.name = FALSE,
@@ -79,6 +82,12 @@ render_plot <- function(m, spec, file) {
         any(grepl("Not estimableNot estimable", grob$label, fixed = TRUE))) {
       grid::grid.edit(name, label = gsub("Not estimableNot estimable", "Not estimable", grob$label, fixed = TRUE))
     }
+  }
+  if (spec$outcome %in% c("qrs", "lvef", "threshold")) {
+    grid::grid.text(
+      "Calculated from printed means, SDs and sample sizes; some results differ from the supplied figure. See verification report.",
+      x = 0.5, y = 0.025, gp = grid::gpar(fontsize = 9, col = "#444444", fontfamily = "sans")
+    )
   }
 }
 
@@ -149,10 +158,42 @@ run_analysis <- function(data_dir, output_dir) {
   }
   audit <- do.call(rbind, audit)
   write.csv(audit, file.path(output_dir, "verification.csv"), row.names = FALSE)
+  write.csv(audit[audit$status == "mismatch", ], file.path(output_dir, "differences_from_figures.csv"), row.names = FALSE)
   write.csv(do.call(rbind, studies), file.path(output_dir, "study_results.csv"), row.names = FALSE)
   write.csv(do.call(rbind, pooled), file.path(output_dir, "pooled_results.csv"), row.names = FALSE)
   saveRDS(models, file.path(output_dir, "models.rds"))
   writeLines(capture.output(sessionInfo()), file.path(output_dir, "sessionInfo.txt"))
+  report <- c("# Comparison with the supplied forest plots", "",
+    "Calculated from the printed arm data using the methods documented in README.md. The comparison scope is the supplied figures.", "",
+    "Original-trial verification is tracked separately in [source verification status](../PRIMARY_SOURCE_VERIFICATION.md).", "",
+    "| Outcome | Figure overall estimate (95% CI) | R overall estimate (95% CI) | Effect and CI match at printed precision |",
+    "| --- | --- | --- | --- |")
+  for (i in seq_len(nrow(specifications))) {
+    spec <- specifications[i, ]
+    r <- refs[refs$outcome == spec$outcome & refs$group == "Overall", ]
+    p <- pooled[[spec$outcome]]
+    p <- p[p$group == "Overall", ]
+    same <- all(abs(round(unlist(p[c("effect", "lower", "upper")]), 2) - unlist(r[c("effect", "lower", "upper")])) < 1e-7)
+    report <- c(report, sprintf("| %s | %s %.2f [%.2f, %.2f] | %s %.2f [%.2f, %.2f] | %s |",
+      spec$title, spec$measure, r$effect, r$lower, r$upper,
+      spec$measure, p$effect, p$lower, p$upper, if (same) "Yes" else "No"))
+  }
+  counts <- table(audit$status)
+  report <- c(report, "", "## Audit counts", "",
+    paste0("- ", names(counts), ": ", as.integer(counts)), "",
+    "The full audit is verification.csv; differences_from_figures.csv contains only strict numerical mismatches.", "",
+    "A mismatch means that calculations from the displayed inputs differ at the displayed output precision. Rounded inputs or software differences may explain very small discrepancies. Two inconsistent mean differences and the QRS confidence-interval discrepancy are detailed in README.md.", "",
+    "## Differences by outcome", "",
+    "| Outcome | Matches | Numerical differences | Unresolved source readings | Not applicable |",
+    "| --- | ---: | ---: | ---: | ---: |")
+  for (i in seq_len(nrow(specifications))) {
+    a <- audit[audit$outcome == specifications$outcome[i], ]
+    report <- c(report, sprintf("| %s | %d | %d | %d | %d |", specifications$title[i],
+      sum(a$status == "match"), sum(a$status == "mismatch"),
+      sum(a$status == "source_unreadable_at_required_precision"),
+      sum(a$status == "not_estimable_or_not_applicable")))
+  }
+  writeLines(report, file.path(output_dir, "verification_report.md"))
   message("Verification counts:")
   print(table(audit$status))
   if (any(audit$status == "mismatch")) warning("Source mismatches: see verification.csv")

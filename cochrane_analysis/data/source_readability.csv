@@ -1,5 +1,8 @@
 outcome,group,field,status,note
-quality_of_life,Overall,tau2,less_than,"The source states tau-squared < 0.0001, not equality."
-quality_of_life,HBP,Q_p,uncertain,"Tiny source text appears to read 0.4068; a higher-resolution source is needed to confirm the final digit."
-quality_of_life,Overall,Q_p,uncertain,"Tiny source text appears to read 0.3654; a higher-resolution source is needed to confirm the final digits."
-hhf,LBBAP,Q_p,uncertain,"Tiny source text appears to read 0.0265; a higher-resolution source is needed to confirm the final digits."
+qrs,LBBAP,Q_p,less_than,"The figure reports heterogeneity p < 0.0001."
+qrs,Overall,Q_p,less_than,"The figure reports heterogeneity p < 0.0001."
+qrs,Overall,group_p,less_than,"The figure reports subgroup-difference p < 0.0001."
+lvef,LBBAP,Q_p,less_than,"The figure reports heterogeneity p < 0.0001."
+lvef,Overall,Q_p,less_than,"The figure reports heterogeneity p < 0.0001."
+threshold,LBBAP,Q_p,less_than,"The figure reports heterogeneity p < 0.0001."
+threshold,Overall,Q_p,less_than,"The figure reports heterogeneity p < 0.0001."
