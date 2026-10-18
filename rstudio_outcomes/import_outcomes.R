@@ -4,8 +4,9 @@ library(readxl)
 
 # Rscript also works from another folder.
 script_arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)
-data_dir <- if (length(script_arg)) {
-  dirname(normalizePath(sub("^--file=", "", script_arg[1])))
+script_path <- if (length(script_arg)) sub("^--file=", "", script_arg[1]) else ""
+data_dir <- if (nzchar(script_path) && file.exists(script_path)) {
+  dirname(normalizePath(script_path))
 } else {
   getwd()
 }
